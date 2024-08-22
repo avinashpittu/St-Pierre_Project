@@ -87,3 +87,53 @@ This function creates a synthetic fluorescence microscopy image populated with m
 - [Matplotlib: Visualization with Python](https://matplotlib.org/)
 
 
+# Bonus(UI)
+
+## Yeast Cell Image Generator with UI
+
+This Tkinter application allows users to generate and preview images of yeast cells with realistic properties. The user can specify various parameters such as image size, number of cells, cell size range, and fluorescence levels. The generated images include a fluorescence image and a labeled image.
+
+## Features
+
+- Generate fluorescence and labeled images of yeast cells.
+- Customize image size, number of cells, cell size range, and fluorescence levels.
+- Preview the generated images within the application.
+- Exit the application with a single button click.
+
+
+### Install the Required Dependencies:
+
+```bash
+pip install numpy tkinter
+```
+
+### Run the Exemplar Script:
+
+```bash
+python Bonus_UI.py
+```
+
+### The script will generate and display the synthetic images.
+
+
+Additional Observations
+
+
+#### `place_realistic_cells(image_size, num_cells, cell_properties)`
+
+This function creates a synthetic fluorescence microscopy image populated with multiple yeast cells, along with a labeled image where each cell is uniquely identified.
+
+- **Inputs:** The script allows for customization of cell properties, such as size and fluorescence intensity, making it versatile for different simulation needs.
+  
+  - `image_size`: A tuple `(height, width)` specifying the dimensions of the output image.
+  - `num_cells`: An integer indicating the number of cells to generate and place within the image.
+  - `cell_properties`: A list of dictionaries where each dictionary contains:
+    - `size`: A tuple defining the size of the cell.
+    - `fluorescence_level`: The fluorescence intensity of the cell.
+      
+- The controlled overlap feature is useful for generating realistic crowded environments often observed in biological samples.
+- The adjustable noise feature simulates the real-world conditions of microscopy images, which typically contain some level of noise.
+
+- **Outputs:**
+  - `fluorescence_image`: A `numpy` array representing the generated fluorescence image, where each pixel corresponds to the fluorescence intensity of the cells.
+  - `labelled_image`: A `numpy` array of the same size as `fluorescence_image`, where each cell is assigned a unique integer label.
