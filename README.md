@@ -83,7 +83,6 @@ This function creates a synthetic fluorescence microscopy image populated with m
 
 ## References
 
-- [Mahotas Library Documentation](https://mahotas.readthedocs.io/en/latest/)
 - [scikit-image: Image processing in Python](https://scikit-image.org/)
 - [NumPy: The fundamental package for scientific computing with Python](https://numpy.org/)
 - [Matplotlib: Visualization with Python](https://matplotlib.org/)
