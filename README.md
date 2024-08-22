@@ -1,4 +1,3 @@
-# St-Pierre_Project
 # Synthetic Yeast Cell Image Generator
 
 This project generates synthetic fluorescence microscopy images of yeast cells with realistic properties such as cell size, fluorescence intensity, and overlapping cells. The code allows users to simulate images for testing and validation of image processing algorithms.
