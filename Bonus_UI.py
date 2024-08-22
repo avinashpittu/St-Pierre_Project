@@ -38,6 +38,9 @@ def generate_and_preview():
     canvas.draw()
     canvas.get_tk_widget().pack()
 
+def exit_app():
+    root.quit()
+
 # Create the main window
 root = tk.Tk()
 root.title("Yeast Cell Image Generator")
@@ -79,6 +82,10 @@ fluorescence_max_entry.grid(column=1, row=5, padx=5, pady=5)
 # Generate button
 generate_button = ttk.Button(root, text="Generate & Preview", command=generate_and_preview)
 generate_button.grid(column=0, row=6, columnspan=2, padx=5, pady=10)
+
+# Exit button
+exit_button = ttk.Button(root, text="Exit", command=exit_app)
+exit_button.grid(column=0, row=7, columnspan=2, padx=5, pady=10)
 
 # Frame for displaying the image
 image_frame = ttk.Frame(root)
