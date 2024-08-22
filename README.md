@@ -14,29 +14,36 @@ This repository contains code to generate synthetic images of yeast cells under 
   - `scikit-image`
   - `matplotlib`
 
-## Installation
-
-To install the necessary Python packages, run:
-
-```sh
-pip install numpy mahotas scikit-image matplotlib
-```
-
 
 ## Usage
 
-### Main Functions
+### Example Script
 
-#### `generate_realistic_cell(size, fluorescence_level)`
+To demonstrate how to use the synthetic image generator functions, an exemplar script is provided. This script showcases how to generate a fluorescence image and a labeled image using the `place_realistic_cells` function.
 
-This function generates an oval-shaped yeast cell with slight random variations in its radii to simulate realistic cell shapes.
+#### Usage Instructions
 
-- **Inputs:**
-  - `size`: A tuple `(width, height)` indicating the base size of the cell.
-  - `fluorescence_level`: An integer specifying the intensity level of the cell's fluorescence.
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/avinashpittu/St-Pierre_Project.git
 
-- **Output:**
-  - Returns a `numpy` array representing the generated cell with the specified fluorescence intensity. The cell is represented as an oval with random radii to introduce natural variability.
+### Install the Required Dependencies:
+
+```bash
+pip install numpy mahotas scikit-image matplotlib
+```
+
+### Run the Exemplar Script:
+```bash
+python example_script.py
+```
+
+### Expected Output:
+The script generates and displays:
+
+  - A Fluorescence Image: A grayscale image showing synthetic yeast cells.
+  - A Labeled Image: A color-labeled image where each yeast cell is marked with a unique identifier.
+
 
 #### `place_realistic_cells(image_size, num_cells, cell_properties)`
 
@@ -52,7 +59,3 @@ This function creates a synthetic fluorescence microscopy image populated with m
 - **Outputs:**
   - `fluorescence_image`: A `numpy` array representing the generated fluorescence image, where each pixel corresponds to the fluorescence intensity of the cells.
   - `labelled_image`: A `numpy` array of the same size as `fluorescence_image`, where each cell is assigned a unique integer label.
-
-### Example Script
-
-An example script is provided to demonstrate how to use these functions to generate and visualize synthetic yeast cell images. The script generates a 2048x2048 image populated with 200 randomly sized yeast cells, visualizes the fluorescence image, and displays the labeled image where each cell is uniquely identified.
