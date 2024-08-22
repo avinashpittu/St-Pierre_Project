@@ -45,8 +45,13 @@ To demonstrate how to use the synthetic image generator functions, an exemplar s
 
 ### Install the Required Dependencies:
 
+If you are in python environment like pycharm
 ```bash
 pip install numpy mahotas scikit-image matplotlib
+```
+or if you are in command line 
+```bash
+python -m pip install numpy mahotas scikit-image matplotlib
 ```
 
 ### Run the Exemplar Script:
