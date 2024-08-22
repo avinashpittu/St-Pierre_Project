@@ -91,6 +91,9 @@ This function creates a synthetic fluorescence microscopy image populated with m
 - [NumPy: The fundamental package for scientific computing with Python](https://numpy.org/)
 - [Matplotlib: Visualization with Python](https://matplotlib.org/)
 
+### Note
+  - You can see the example outputs in "SyntheticImageGenerator.ipynb". I ran that code in Jupyter Notebook to show it as an example
+
 
 # Bonus(UI)
 
@@ -142,3 +145,6 @@ This function creates a synthetic fluorescence microscopy image populated with m
 - **Outputs:**
   - `fluorescence_image`: A `numpy` array representing the generated fluorescence image, where each pixel corresponds to the fluorescence intensity of the cells.
   - `labelled_image`: A `numpy` array of the same size as `fluorescence_image`, where each cell is assigned a unique integer label.
+
+ ### Note
+  - You can see the example outputs in "SyntheticImageGenerator.ipynb". I ran that code in Jupyter Notebook to show it as an example
