@@ -164,7 +164,7 @@ This function creates a synthetic fluorescence microscopy image populated with m
 
 ## Introduction
 
-The `BonusAlgo 2.0.py` script is an enhanced version of the `Bonus_AlgoTest.py` script. It not only utilizes the Mask R-CNN model but also integrates the Cellpose model to segment and analyze synthetic fluorescence microscopy images. This script aims to compare the performance of different segmentation models on the same dataset and provide a more comprehensive evaluation.
+The `BonusAlgo 2.0.py` script not only utilizes the Mask R-CNN model but also integrates the Cellpose model to segment and analyze synthetic fluorescence microscopy images. This script aims to compare the performance of different segmentation models on the same dataset and provide a more comprehensive evaluation.
 
 ## Prerequisites
 
@@ -245,7 +245,7 @@ The script will compare the segmentation results from the Mask R-CNN and Cellpos
 
 ## Conclusion
 
-The `BonusAlgo 2.0.py` script extends the functionality of the original `Bonus_AlgoTest.py` by incorporating an additional model (Cellpose) specifically designed for biological image segmentation. This script provides a comprehensive comparison of two different segmentation approaches, offering insights into which model performs better on synthetic fluorescence images. The outputs, including precision, recall, and Jaccard index, help quantify the effectiveness of each model.
+The `BonusAlgo 2.0.py` script functionlity is incorporating an additional model (Cellpose) specifically designed for biological image segmentation. This script provides a comprehensive comparison of two different segmentation approaches, offering insights into which model performs better on synthetic fluorescence images. The outputs, including precision, recall, and Jaccard index, help quantify the effectiveness of each model.
 
 Ensure that the required dependencies are installed, and the correct images are in place before running the script. This script is a powerful tool for evaluating and comparing segmentation models on synthetic datasets.
 
